@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sono", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 0.733) 0%,
+
+    rgba(0, 255, 170, 0.733) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.efeito-vidro {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 34px 0 rgba(76, 0, 255, 0.534);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 40px;
+  border: 3px solid rgba(64, 167, 167, 0.19);
+}
+
+.container {
+  width: 499px;
+  max-width: 100%;
+}
+
+.header {
+  padding: 25px;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-style: 0;
+  border-width: 4px;
+}
+
+.form-control i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.submit {
+  margin: 0;
+  box-shadow: 0 10px 34px 0 rgba(76, 0, 255, 0.534);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 255, 170, 0.733),
+    rgba(69, 187, 148, 0.733) 100%
+  );
+  border-radius: 40px;
+  width: 30%;
+  height: 40px;
+  border-color: rgb(64, 167, 167);
+  padding: 10px;
+}
+
+/* Error and success */ /*    rgba(255, 255, 255, 0.18)       */
+
+.form-control.success input {
+  border-color: #008600;
+}
+
+.form-control.error input {
+  border-color: #ff000f;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #008600;
+  visibility: visible;
+}
+
+.form-control.form-control.error i.fa-exclamation-circle {
+  color: #ff000f;
+  visibility: visible;
+}
+.form-control.error small {
+  visibility: visible;
+  color: #ff000f;
+}
